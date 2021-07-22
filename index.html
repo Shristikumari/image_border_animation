@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .animation_head{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items:center;
+        }
+        .animation_area{
+           width: 400px;
+           height: 400px;
+           position: relative;
+
+        }
+        .animation_area > *, .blend > *{
+           width: 400px;
+           height: 400px;
+           position: absolute;
+       } 
+       #roundes{
+           border: 15px red solid;
+           transform: rotate(45deg);
+           box-shadow: 0 0 10px rgb(202, 129, 129);
+
+       }
+       .grid{
+           display: grid;
+           grid-template-rows: 1fr 1fr;
+           grid-template-columns: 1fr 1fr;
+       }
+       .white_part{
+           background-color: white;
+       }
+       .blend{
+        mix-blend-mode: multiply;
+
+       }
+       img{
+        box-shadow: 0 0 10px rgb(202, 129, 129);
+       }
+    </style>
+</head>
+<body>
+    <div class="animation_head">
+        <div class="animation_area">
+        <img src="https://www.hindisoch.com/wp-content/uploads/2017/07/Bhagwan-Shri-Lord-Ganesha-HD-Images.webp" alt="">
+        <div id="roundes"></div>
+        <div class="grid">
+            <div class="white_part"></div>
+            <div></div>
+            <div></div>
+            <div class="white_part"></div>    
+        </div>
+        
+          <div class="blend">
+            <img src="https://www.hindisoch.com/wp-content/uploads/2017/07/Bhagwan-Shri-Lord-Ganesha-HD-Images.webp" alt="">
+            <div class="grid">
+                <div></div>
+                <div class="white_part"></div>
+                <div class="white_part"></div>
+                <div></div>
+            </div>
+        
+    </div>
+</div>
+</body>
+</html>
